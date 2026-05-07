@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-box">
+            <div class="img">
+                <img src="burger 5.jpg">
+            </div>
+            <div class="name"> PT TIGERNIX </div>
+            <h2>Login</h2>
+
+            <input type=" email" id="email" placeholder="Masukkan email">
+            <input type="password" id="password" placeholder="Masukkan password">
+
+            <button onclick="login()">Login</button>
+
+            <div class="links">
+                <a href="#" onclick="openModal('forgotModal')">Lupa Password?</a>
+                |
+                <a href="#" onclick="openModal('registerModal')">Daftar</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal Error Login -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('errorModal')">&times;</span>
+            <h3 style="color:red;">Login Gagal</h3>
+            <p>Email atau password yang anda masukkan salah</p>
+
+            <div class="modal-buttons">
+                <button onclick="openModal('registerModal')">Register</button>
+                <button onclick="openModal('forgotModal')">Lupa Password</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
