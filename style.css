@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  /* agar padding dan border tidak memengaruhi ukuran elemen */
+}
+
+/* .container {
+  width: 100%;
+} */
+
+/* .containerone {
+  margin-left: 20px;
+
+} */
+
+.name {
+  margin-top: 2px;
+color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.2); */
+}
+
+/* .login-box1 {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+ height: 417px;
+ background-color: #007bff;
+} */
+
+
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #007bff;
+}
+
+.links {
+  margin-top: 10px;
+ /* padding-right: 180px; */
+}
+
+.links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4facfe;
+  color: white;
+}
+
+.modal-buttons button:hover {
+  background: #007bff;
+}
