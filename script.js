@@ -2,14 +2,13 @@ function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // Data dummy (simulasi tanpa database)
     const validEmail = "admin@gmail.com";
     const validPassword = "12345";
 
     if (email === validEmail && password === validPassword) {
-        alert("Login berhasil!");
+        openModal("succesLoginModal");
     } else {
-        alert("email/password yang anda masukkan salah");
+        openModal("errorModal");
     }
 }
 
@@ -32,16 +31,3 @@ window.onclick = function (event) {
     });
 }
 
-function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    const validEmail = "admin@gmail.com";
-    const validPassword = "12345";
-
-    if (email === validEmail && password === validPassword) {
-        alert("Login berhasil!");
-    } else {
-        openModal("errorModal");
-    }
-}
